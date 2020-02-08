@@ -6,9 +6,9 @@
 #   3) aria2c --load-cookies cookies.txt "https://v.qq.com/x/cover/rpup19lfbuf2skc/y002856bq4f.html"
 #
 .qq.com	TRUE	/	FALSE	2147385600	pgv_pvi	1106660352
-.ptlogin2.qq.com	TRUE	/	FALSE	2147483646	pt2gguin	o0284772894
+.ptlogin2.qq.com	TRUE	/	FALSE	2147483646	pt2gguin	1111111
 .qq.com	TRUE	/	FALSE	2147483645	RK	YTz8UCrIHK
-.qq.com	TRUE	/	FALSE	2147483646	ptcz	c8da177215a8130b2060a1c0d1bacda60b11a5e4c074520f6700a951621594a2
+.qq.com	TRUE	/	FALSE	2147483646	ptcz	222
 .mail.qq.com	TRUE	/	FALSE	1612171702	webp	1
 .graph.qq.com	TRUE	/	FALSE	2147385600	pgv_pvid	6074319040
 .mail.qq.com	TRUE	/	FALSE	1583227701	qm_logintype	qq

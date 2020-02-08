@@ -5,7 +5,9 @@ __CreateAt__ = '2020/2/6-20:53'
 
 import os
 from concurrent.futures import ThreadPoolExecutor
+import threading
 
+lock = threading.Lock()
 cookies = "cookies.txt"
 download_path = r"e:\tx"
 
@@ -35,8 +37,12 @@ def download(url):
     :return:
     """
     # url = "https://v.qq.com/x/cover/rpup19lfbuf2skc/s0028fkasvx.html"
-    resp = os.system(r'you-get -c %s  %s -o %s' % (cookies, url, download_path))
+    # lock.acquire()
+    command = 'you-get -c %s  %s -o %s' % (cookies, url, download_path)
+    print(command)
+    resp = os.system('you-get -c %s  %s -o %s' % (cookies, url, download_path))
     print(resp)
+    # lock.release()
 
 
 if __name__ == "__main__":

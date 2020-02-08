@@ -1,12 +1,13 @@
 # 分析下载腾讯视频
 
 ## 获取播放列表
-- 通过F12调试，得到播放列表的Js为：
+- 通过F12调试，得到播放列表的Js
 ```buildoutcfg
 play_list = document.querySelectorAll("body > div:nth-child(3) > div.site_container.container_main > div.container_inner > div > div.wrapper_main > div._playsrc_series > span > div > div > div:nth-child(1) > span>a")
 for(var i=0;i< play_list.length;i++){console.log(play_list[i].href)}
 
 ```
+- 然后把得到的列表复制到play_list.txt中即可
 ## 导出登录腾讯视频的会员cookie
 - 使用cookies.txt插件
 
@@ -23,3 +24,7 @@ for(var i=0;i< play_list.length;i++){console.log(play_list[i].href)}
 ## 运行代码
 - 直接运行vqq.py中代码
 - 爱奇艺的会员视频无法下载
+
+## 2020-2-8 更新说明
+-  ```vqq.py``` 经过测试,不能下载会员视频
+- ```ts_to_mp4.py``` 包含将ts合并为mp4,然后在把所有mp4合并成一个总的mp4文件,此处合并后,视频不完整,应该是下载的ts文件不完整
