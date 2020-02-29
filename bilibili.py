@@ -18,9 +18,9 @@ def download_pool(play_list):
 
 
 def get_play_list():
-    url = "https://www.bilibili.com/video/av14800010?p="
+    url = "https://www.bilibili.com/video/av15207431?p="
     data = []
-    for i in range(1, 25):
+    for i in range(1, 24):
         data.append(url + str(i))
     return data
 
@@ -31,7 +31,7 @@ def download(url):
     :param url:
     :return:
     """
-    path = r"E:\bilibili\造物小百科.第三季"
+    path = r"E:\bilibili\造物小百科.第四季"
     command = "you-get %s -o  %s" % (url, path)
     print(command)
     resp = os.system(command)
