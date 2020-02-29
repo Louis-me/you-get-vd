@@ -28,3 +28,17 @@ for(var i=0;i< play_list.length;i++){console.log(play_list[i].href)}
 ## 2020-2-8 更新说明
 -  ```vqq.py``` 经过测试,不能下载会员视频
 - ```ts_to_mp4.py``` 包含将ts合并为mp4,然后在把所有mp4合并成一个总的mp4文件,此处合并后,视频不完整,应该是下载的ts文件不完整
+
+## 2020-2-9 
+- 经过测试,使用[annie](https://github.com/iawia002/annie) 和cookie的方式成功下载会员视频
+- cookie 内容必须为name=value;name=value的方式,最简单获取的方式就是抓包获取
+- 最终验证结果是,用annie下载了会员的视频后，最终用ffmpeg合并时报错，就算合并成功后,也是播放不了
+
+## 2020-2-13 更新
+- b站视频下载成功
+
+## 关于会员下载总结
+- 非会员视频可以采用you-get和annie,会员的视频获取cookie去下载,经常不行
+
+## 2020-2-29更新
+- 新增对荔枝fm音频下载
